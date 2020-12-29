@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title></title>
+
+		<!--put your external stylesheet links here-->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+          <link rel="stylesheet" href="lib/leaflet.css">
+          <link rel="stylesheet" href="css/style.css">
+        
+          <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet"/>
+        
+            <link rel="stylesheet" href="js/leaflet.zoomhome.css"/>     
+
+          <script src="lib/jquery-3.3.1.js"></script>
+
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+          <script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+          <script src="lib/leaflet-src.js"></script>
+        <script src="js/leaflet.zoomhome.min.js"></script>
+          <script src="js/geojson.js"></script>
+          <script type="text/javascript" src="js/main.js"></script>
+	</head>
+
+	<body>
+        
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed menu" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Oberlin College Through Time</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><button class="btn" id="buildingDirec"><i class="fas fa-building"></i> Building Directory</button></li>
+                <li><button class="btn" id="timebtn"><i class="fas fa-history"></i> Choose Year</button></li>
+              </ul>
+
+            </div><!--/.navbar-collapse -->
+          </div>
+        </nav>
+        
+        <div class="wrapper">
+            <div id="mapholder">
+                
+                <div id = "timeHolder" class = "col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                  <div id = "timeSearch">
+                    <button id="timesearchClose" class = "sideClose"><i class="fas fa-window-close"></i></button>
+
+                    <div id = "sliderholder">
+                      <h5><i class="far fa-clock"></i> Select To Change Map <i class="far fa-clock"></i></h5>
+                      <form id = "year_form">
+                            <div class="inputHolder"><label>Year:</label>
+                              <select name="year_added">
+                                <option value="" disabled selected>Year</option>
+                                <option value=1833>1833</option>
+                                <option value=1834>1834</option>
+                                <option value=1835>1835</option>
+                                <option value=1836>1836</option>
+                                <option value=1837>1837</option>
+                                <option value=1838>1838</option>
+                              </select>
+                            </div>
+                            <button type="submit" class="btn btn-default" id="year_submit_btn">
+                              <span class="glyphicon glyphicon-star"></span> Submit
+                            </button>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+                
+                
+                <div id = "buildHolder" class = "col-xs-12 col-sm-6 col-md-6 col-lg-6 sideHolder">
+                    <div id = "wolfForm" class ="sideContent">
+                    <button id="buildClose" class = "sideClose"><i class="fas fa-window-close"></i></button>
+
+                        <div class="tableholder">
+                           <p><strong>Click the headers to sort the table.</strong></p>
+                            <p>The first time you click, the sorting direction is ascending (A to Z).</p>
+                            <p>Click again, and the sorting direction will be descending (Z to A):</p>
+
+                            <table id="myTable">
+                              <tr>
+                               <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->  
+
+                                <th>Number</th>
+                                    <th>Name</th>
+                                    <th>Archive Link</th>
+                                    <th>Grid Location</th>
+                                  </tr>
+                                  <tr>
+                                    <td>155</td>
+                                    <td>Mudd</td>
+                                      <td><a href="#">Link Here</a></td>
+                                    <td>A1</td>
+                                  </tr>
+                                  <tr>
+                                    <td>89</td>
+                                    <td>Peters</td>
+                                    <td><a href="#">Link Here</a></td>
+                                    <td>A6</td>
+                                  </tr>
+                                  <tr>
+                                    <td>96</td>
+                                    <td>Carnegie</td>
+                                    <td><a href="#">Link Here</a></td>
+                                    <td>C1</td>
+                                  </tr>
+                                  <tr>
+                                    <td>120</td>
+                                    <td>Hales</td>
+                                    <td><a href="#">Link Here</a></td>
+                                    <td>A1</td>
+                                  </tr>
+                                  <tr>
+                                    <td>160</td>
+                                    <td>Stevenson</td>
+                                    <td><a href="#">Link Here</a></td>
+                                    <td>F2</td>
+                                  </tr>
+                                  <tr>
+                                    <td>168</td>
+                                    <td>Science Center</td>
+                                    <td><a href="#">Link Here</a></td>
+                                    <td>A1</td>
+                                  </tr>
+                                  <tr>
+                                    <td>105</td>
+                                    <td>Wilder</td>
+                                    <td><a href="#">Link Here</a></td>
+                                    <td>C3</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2</td>
+                                    <td>Tappan</td>
+                                    <td><a href="#">Link Here</a></td>
+                                    <td>A8</td>
+                                  </tr>
+                                </table>
+                            </div>
+
+
+                    </div>
+                  </div>
+                
+                    <div id='map'></div>
+                    <div id='yearHeader'><h3><b>1833</b></h3></div>
+            </div>
+        </div>
+          
+
+        
+
+        
+     
+	
+        
+
+		<!--put your external script links here-->
+        <script src="lib/jquery-3.3.1.js"></script>
+	    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+        <script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+        <script src="lib/leaflet-src.js"></script>
+        <script src="js/leaflet.zoomhome.min.js"></script>
+        <script src="js/geojson.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
