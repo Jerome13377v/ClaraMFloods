@@ -126,7 +126,7 @@ function createMap(){
         zoomSnap: 0.2, //setting this overides the default value of 1 which means the zoom levels can be in integers/multiples of this number
         //set to false to overide default position
         zoomControl: false,
-        layers: grayscaleBase //sets which base layer is loaded first
+        layers: customBaseLayer //sets which base layer is loaded first
     });
 
     //add zoom control with original extent button that references leaflet plugin zoomhome
@@ -140,7 +140,7 @@ function createMap(){
     var baseLayers = {
         "Plain": grayscaleBase,
         "Terrain": OpenMapSurfer_Hillshade,
-        "Habitat": customBaseLayer
+        "Main": customBaseLayer
     };
 
     layerControl = new L.control.layers(baseLayers, null).addTo(mapid);
