@@ -63,9 +63,6 @@
                                 <option value=1833>1833</option>
                                 <option value=1834>1834</option>
                                 <option value=1835>1835</option>
-                                <option value=1836>1836</option>
-                                <option value=1837>1837</option>
-                                <option value=1838>1838</option>
                               </select>
                             </div>
                             <button type="submit" class="btn btn-default" id="year_submit_btn">
@@ -81,68 +78,23 @@
                     <div id = "wolfForm" class ="sideContent">
                     <button id="buildClose" class = "sideClose"><i class="fas fa-window-close"></i></button>
 
-                        <div class="tableholder">
+                        <div id="tableholder">
                            <p><strong>Click the headers to sort the table.</strong></p>
                             <p>The first time you click, the sorting direction is ascending (A to Z).</p>
-                            <p>Click again, and the sorting direction will be descending (Z to A):</p>
+                            <p>Click again, and the sorting direction will be descending (Z to A).</p>
 
                             <table id="myTable">
                               <tr>
                                <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->  
 
-                                <th>Number</th>
-                                    <th>Name</th>
+                                    <th onclick="sortTable(0)">Number</th>
+                                    <th onclick="sortTable(1)">Name</th>
+                                  
                                     <th>Archive Link</th>
                                     <th>Grid Location</th>
                                   </tr>
-                                  <tr>
-                                    <td>155</td>
-                                    <td>Mudd</td>
-                                      <td><a href="#">Link Here</a></td>
-                                    <td>A1</td>
-                                  </tr>
-                                  <tr>
-                                    <td>89</td>
-                                    <td>Peters</td>
-                                    <td><a href="#">Link Here</a></td>
-                                    <td>A6</td>
-                                  </tr>
-                                  <tr>
-                                    <td>96</td>
-                                    <td>Carnegie</td>
-                                    <td><a href="#">Link Here</a></td>
-                                    <td>C1</td>
-                                  </tr>
-                                  <tr>
-                                    <td>120</td>
-                                    <td>Hales</td>
-                                    <td><a href="#">Link Here</a></td>
-                                    <td>A1</td>
-                                  </tr>
-                                  <tr>
-                                    <td>160</td>
-                                    <td>Stevenson</td>
-                                    <td><a href="#">Link Here</a></td>
-                                    <td>F2</td>
-                                  </tr>
-                                  <tr>
-                                    <td>168</td>
-                                    <td>Science Center</td>
-                                    <td><a href="#">Link Here</a></td>
-                                    <td>A1</td>
-                                  </tr>
-                                  <tr>
-                                    <td>105</td>
-                                    <td>Wilder</td>
-                                    <td><a href="#">Link Here</a></td>
-                                    <td>C3</td>
-                                  </tr>
-                                  <tr>
-                                    <td>2</td>
-                                    <td>Tappan</td>
-                                    <td><a href="#">Link Here</a></td>
-                                    <td>A8</td>
-                                  </tr>
+
+
                                 </table>
                             </div>
 
