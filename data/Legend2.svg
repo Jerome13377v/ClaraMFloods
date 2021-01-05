@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 700 700" style="enable-background:new 0 0 700 700;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#B1B1B1;}
+	.st2{fill:#1E1E1E;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st3{fill:#437758;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st4{fill:#A06137;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st5{fill:#757575;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st6{font-family:'MyriadPro-Regular';}
+	.st7{font-size:44px;}
+</style>
+<g>
+	<path class="st0" d="M700,680c0,11-9,20-20,20H20c-11,0-20-9-20-20V20C0,9,9,0,20,0h660c11,0,20,9,20,20V680z"/>
+	<path class="st1" d="M680,8c6.62,0,12,5.38,12,12v660c0,6.62-5.38,12-12,12H20c-6.62,0-12-5.38-12-12V20c0-6.62,5.38-12,12-12H680
+		 M680,0H20C9,0,0,9,0,20v660c0,11,9,20,20,20h660c11,0,20-9,20-20V20C700,9,691,0,680,0L680,0z"/>
+</g>
+<rect x="19.27" y="14.85" class="st2" width="340.24" height="164.46"/>
+<rect x="19.27" y="351.94" class="st3" width="340.24" height="164.46"/>
+<rect x="19.27" y="183.9" class="st4" width="340.24" height="164.46"/>
+<rect x="19.27" y="519.98" class="st5" width="340.24" height="164.46"/>
+<text transform="matrix(1 0 0 1 376.2857 111.0213)" class="st6 st7">College Building</text>
+<text transform="matrix(1 0 0 1 423.1458 254.5727)"><tspan x="0" y="0" class="st6 st7">Newly Built</tspan><tspan x="-47.1" y="52.8" class="st6 st7">College Building</tspan></text>
+<text transform="matrix(1 0 0 1 372.8993 431.1623)"><tspan x="0" y="0" class="st6 st7">College Green or</tspan><tspan x="33.22" y="52.8" class="st6 st7">Athletic Field</tspan></text>
+<text transform="matrix(1 0 0 1 395.9312 616.8749)" class="st6 st7">Town Building</text>
+</svg>

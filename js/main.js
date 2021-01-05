@@ -146,11 +146,14 @@ var buildingLayer = L.geoJSON(false, {
 
         if (feature.properties && feature.properties.Name) {
             layer.bindPopup(buildPopup);
+            console.log(feature.properties.Name);
+            console.log(feature.geometry.coordinates);
             buildingsArray.push({
                     NAME: feature.properties.Name,
                     BUILT: feature.properties.YearBuilt,
                     EXISTED: feature.properties.Year,
-                    NUMBER: feature.properties.IdNo
+                    NUMBER: feature.properties.IdNo,
+                    LOCATION: feature.geometry.coordinates
                 })
 
         }
@@ -195,6 +198,43 @@ function onEachGrid(feature, layer) {
 
 }
 
+function addLegend(){
+    L.Control.Watermark = L.Control.extend({
+        onAdd: function(map) {
+            var img = L.DomUtil.create('img');
+
+            img.src = '/data/Legend2.svg';
+            img.style.width = '150px';
+
+            return img;
+        },
+
+        onRemove: function(map) {
+            // Nothing to do here
+        }
+    });
+
+    L.control.watermark = function(opts) {
+        return new L.Control.Watermark(opts);
+    }
+
+    L.control.watermark({ position: 'bottomleft' }).addTo(currentMap);
+}
+
+function enablePrint(customBaseLayer){
+     var printer = L.easyPrint({
+            tileLayer: customBaseLayer,
+      		sizeModes: ['Current'],
+            defaultSizeTitles: {Current: 'Print Current Map Extent'},
+      		filename: 'myMap',
+      		exportOnly: false,
+      		hideControlContainer: true
+		}).addTo(currentMap);
+
+		function manualPrint () {
+			printer.printMap('CurrentSize', 'MyManualPrint')
+		}
+}
 
 // Function to instantiate the Leaflet map
 function createMap(){
@@ -242,7 +282,7 @@ function createMap(){
 
     layerControl = new L.control.layers(baseLayers, null).addTo(mapid);
     
-    gridLayer.addTo(mapid); //adds grid layer to map
+    //adding only the control and not the grid layer to the map means it is turned off on first map load, and can be turned on with the layer legend
     layerControl.addOverlay(gridLayer, "Grid"); //adds layer control of buidings
     
     buildingLayer.addTo(mapid); //adds empty layer to map
@@ -252,6 +292,13 @@ function createMap(){
     
     // Set global map variable to map object
     currentMap = mapid;
+    enablePrint(customBaseLayer);
+    
+    //adds image of Legend
+    addLegend();
+    findInTable();
+    
+    
 
 };
 
@@ -363,6 +410,46 @@ function GenerateTable() {
 
 }
 
+//function that lets you click on a table cell and get its value
+function findInTable(){
+    var tbl = document.getElementById("myTable");
+
+    if (tbl != null) {
+        for (var i = 0; i < tbl.rows.length; i++) {
+            for (var j = 0; j < tbl.rows[i].cells.length; j++)
+                tbl.rows[i].cells[j].onclick = function () { getval(this); 
+                                                           console.log(this);
+                                                           };
+        }
+    }
+    else{
+        console.log("whoops");
+    }
+
+    //function that when you click on a table cell name, will zoom you to the building
+    function getval(cel) {
+        //gets cell contents
+        var clickBuildingName = (cel.innerHTML);
+        
+        //iterates through buildings array to search for a building who's name matches the one clicked on
+        for (var i=0;i<buildingsArray.length;i+=1) {
+            var buildingName = buildingsArray[i].NAME;
+            if (buildingName == clickBuildingName){
+                buildingLayer.eachLayer(function (layer) {
+                      if (layer.feature.properties.Name === buildingName) {
+                        // Zoom to that layer.
+                        currentMap.fitBounds(layer.getBounds());
+                      }
+                    });
+            }
+            var buildingLocation = buildingsArray[i].LOCATION
+        }
+    }
+}
+
+
+
+//sort table by headers
 function sortTable(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   table = document.getElementById("myTable");
@@ -418,23 +505,11 @@ function sortTable(n) {
   }
 }
 
-//sort tables by headers
-var getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
 
-var comparer = (idx, asc) => (a, b) => ((v1, v2) => 
-    v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
-
-// do the work...
-document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
-    var table = th.closest('table');
-    Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-        .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-        .forEach(tr => table.appendChild(tr) );
-})));
 
 
 $(document).ready(createMap);
+
 
 
 
