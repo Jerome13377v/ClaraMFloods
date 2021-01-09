@@ -245,7 +245,7 @@ select:focus{
 #yearHeader {
     background: rgba(128, 128, 128, 0.5);
     top: 10px;
-    left: 100px;
+    left: 50px;
     position: absolute;
     z-index: 50;
     text-align: center;
