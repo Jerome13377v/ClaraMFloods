@@ -203,7 +203,7 @@ function addLegend(){
         onAdd: function(map) {
             var img = L.DomUtil.create('img');
 
-            img.src = '/data/Legend1.PNG';
+            img.src = 'data/Legend2.png';
             img.style.width = '150px';
 
             return img;
