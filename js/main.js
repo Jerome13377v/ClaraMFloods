@@ -5,21 +5,21 @@ var layerControl = 0;
 var currentYear = 1833;
 
 var Oberlin2= [
-{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-82.21783318848895,41.291438038172316],[-82.2176904208286,41.291428520328225],[-82.2176973907541,41.29132397144434],[-82.21784015841445,41.29133348928826],[-82.21783318848895,41.291438038172316]]]},"properties":{"Id":0,"Name":"Oberlin Hall","YearBuilt":1833,"Year":1833,"IdNo":2}},
-{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-82.21756668885628,41.29184640245826],[-82.21756023463672,41.29184583778722],[-82.21755397652535,41.29184416093133],[-82.21754810467174,41.29184142284102],[-82.21754279748914,41.29183770671177],[-82.21753821623366,41.29183312545629],[-82.21753450010442,41.29182781827371],[-82.2175317620141,41.291821946420086],[-82.21753008515822,41.291815688308716],[-82.21752952048718,41.29180923408916],[-82.21753008515822,41.2918027798696],[-82.2175317620141,41.29179652175823],[-82.21753450010442,41.291790649904605],[-82.21753821623366,41.29178534272202],[-82.21754279748914,41.29178076146655],[-82.21754810467172,41.2917770453373],[-82.21755397652535,41.29177430724698],[-82.21756023463672,41.291772630391094],[-82.21756668885628,41.29177206572005],[-82.21757314307584,41.291772630391094],[-82.21757940118721,41.29177430724698],[-82.21758527304083,41.2917770453373],[-82.21759058022342,41.29178076146655],[-82.2175951614789,41.29178534272202],[-82.21759887760814,41.291790649904605],[-82.21760161569846,41.29179652175823],[-82.21760329255434,41.2918027798696],[-82.21760385722538,41.29180923408916],[-82.21760329255434,41.291815688308716],[-82.21760161569846,41.291821946420086],[-82.21759887760814,41.29182781827371],[-82.2175951614789,41.29183312545629],[-82.21759058022342,41.29183770671177],[-82.21758527304084,41.29184142284102],[-82.21757940118721,41.29184416093133],[-82.21757314307584,41.29184583778722],[-82.21756668885628,41.29184640245826]]]},"properties":{"Id":0,"Name":"Historic Elm","YearBuilt":1833,"Year":1835,"IdNo":1}},
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-82.21783318848895,41.291438038172316],[-82.2176904208286,41.291428520328225],[-82.2176973907541,41.29132397144434],[-82.21784015841445,41.29133348928826],[-82.21783318848895,41.291438038172316]]]},"properties":{"Id":0,"Name":"Oberlin Hall","YearBuilt":1833,"Year":1833,"IdNo":2, "Archive": "http://www.oberlinlibstaff.com/omeka_oca/items/show/48"}},
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-82.21756668885628,41.29184640245826],[-82.21756023463672,41.29184583778722],[-82.21755397652535,41.29184416093133],[-82.21754810467174,41.29184142284102],[-82.21754279748914,41.29183770671177],[-82.21753821623366,41.29183312545629],[-82.21753450010442,41.29182781827371],[-82.2175317620141,41.291821946420086],[-82.21753008515822,41.291815688308716],[-82.21752952048718,41.29180923408916],[-82.21753008515822,41.2918027798696],[-82.2175317620141,41.29179652175823],[-82.21753450010442,41.291790649904605],[-82.21753821623366,41.29178534272202],[-82.21754279748914,41.29178076146655],[-82.21754810467172,41.2917770453373],[-82.21755397652535,41.29177430724698],[-82.21756023463672,41.291772630391094],[-82.21756668885628,41.29177206572005],[-82.21757314307584,41.291772630391094],[-82.21757940118721,41.29177430724698],[-82.21758527304083,41.2917770453373],[-82.21759058022342,41.29178076146655],[-82.2175951614789,41.29178534272202],[-82.21759887760814,41.291790649904605],[-82.21760161569846,41.29179652175823],[-82.21760329255434,41.2918027798696],[-82.21760385722538,41.29180923408916],[-82.21760329255434,41.291815688308716],[-82.21760161569846,41.291821946420086],[-82.21759887760814,41.29182781827371],[-82.2175951614789,41.29183312545629],[-82.21759058022342,41.29183770671177],[-82.21758527304084,41.29184142284102],[-82.21757940118721,41.29184416093133],[-82.21757314307584,41.29184583778722],[-82.21756668885628,41.29184640245826]]]},"properties":{"Id":0,"Name":"Historic Elm","YearBuilt":1833,"Year":1835,"IdNo":1, "Archive": "http://www.oberlinlibstaff.com/omeka_oca/items/show/179"}},
 {"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-82.21818687912616,41.29142515913884],[-82.21790134380547,41.29144657428776],[-82.21790848218848,41.29132522177645],[-82.21818687912616,41.29133236015946],[-82.21818687912616,41.29142515913884]]]},"properties":{"Id":0,"Name":"Building 2","YearBuilt":1834,"Year":1835,"IdNo":3}},
 {"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-82.21874367300154,41.29141802075577],[-82.21840103061658,41.29140374398969],[-82.21840464310856,41.291317044183415],[-82.21874728549346,41.291331320949496],[-82.21874367300154,41.29141802075577]]]},"properties":{"Id":0,"Name":"Building 3","YearBuilt":1834,"Year":1835,"IdNo":4}},
 {"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-82.21983584560314,41.29109679351984],[-82.21971449309189,41.29111820866899],[-82.21966519513126,41.29083885355908],[-82.21978654764257,41.29081743840999],[-82.21983584560314,41.29109679351984]]]},"properties":{"Id":0,"Name":"Building 4","YearBuilt":1834,"Year":1835,"IdNo":5}},
 {"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-82.21796558925257,41.29101113292376],[-82.21773716099597,41.29100399454069],[-82.21774095652654,41.29088253756538],[-82.21796938478309,41.29088967594822],[-82.21796558925257,41.29101113292376]]]},"properties":{"Id":0,"Name":"Building 5","YearBuilt":1834,"Year":1835,"IdNo":6}},
 {"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-82.21846527606382,41.293414150410165],[-82.21843846012517,41.29341180431953],[-82.21841245897525,41.29340483733241],[-82.21838806264584,41.29339346113717],[-82.21836601240706,41.29337802139376],[-82.21834697824427,41.29335898723096],[-82.21833153850085,41.29333693699218],[-82.21832016230562,41.29331254066277],[-82.2183131953185,41.29328653951285],[-82.21831084922786,41.2932597235742],[-82.2183131953185,41.293232907635556],[-82.21832016230562,41.293206906485636],[-82.21833153850085,41.29318251015622],[-82.21834697824427,41.293160459917445],[-82.21836601240706,41.29314142575465],[-82.21838806264584,41.29312598601123],[-82.21841245897525,41.293114609815994],[-82.21843846012517,41.29310764282887],[-82.21846527606382,41.29310529673824],[-82.21849209200248,41.29310764282887],[-82.2185180931524,41.293114609815994],[-82.2185424894818,41.29312598601123],[-82.21856453972059,41.29314142575465],[-82.21858357388338,41.293160459917445],[-82.2185990136268,41.29318251015622],[-82.21861038982203,41.293206906485636],[-82.21861735680915,41.293232907635556],[-82.21861970289979,41.2932597235742],[-82.21861735680915,41.29328653951285],[-82.21861038982203,41.29331254066277],[-82.2185990136268,41.29333693699218],[-82.21858357388338,41.29335898723096],[-82.21856453972059,41.29337802139376],[-82.2185424894818,41.29339346113717],[-82.2185180931524,41.29340483733241],[-82.21849209200248,41.29341180431953],[-82.21846527606382,41.293414150410165]]]},"properties":{"Id":0,"Name":"Building 6","YearBuilt":1835,"Year":1835,"IdNo":7}},
 {"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-82.22059251420302,41.29202478331223],[-82.22027842535022,41.29199622978007],[-82.22029071273084,41.291861068593505],[-82.22060480158365,41.291889622125666],[-82.22059251420302,41.29202478331223]]]},"properties":{"Id":0,"Name":"Building 7","YearBuilt":1835,"Year":1835,"IdNo":8}},
-{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-82.21783318848895,41.291438038172316],[-82.2176904208286,41.291428520328225],[-82.2176973907541,41.29132397144434],[-82.21784015841445,41.29133348928826],[-82.21783318848895,41.291438038172316]]]},"properties":{"Id":0,"Name":"Oberlin Hall","YearBuilt":1833,"Year":1834,"IdNo":2}},
-{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-82.21756668885628,41.29184640245826],[-82.21756023463672,41.29184583778722],[-82.21755397652535,41.29184416093133],[-82.21754810467174,41.29184142284102],[-82.21754279748914,41.29183770671177],[-82.21753821623366,41.29183312545629],[-82.21753450010442,41.29182781827371],[-82.2175317620141,41.291821946420086],[-82.21753008515822,41.291815688308716],[-82.21752952048718,41.29180923408916],[-82.21753008515822,41.2918027798696],[-82.2175317620141,41.29179652175823],[-82.21753450010442,41.291790649904605],[-82.21753821623366,41.29178534272202],[-82.21754279748914,41.29178076146655],[-82.21754810467172,41.2917770453373],[-82.21755397652535,41.29177430724698],[-82.21756023463672,41.291772630391094],[-82.21756668885628,41.29177206572005],[-82.21757314307584,41.291772630391094],[-82.21757940118721,41.29177430724698],[-82.21758527304083,41.2917770453373],[-82.21759058022342,41.29178076146655],[-82.2175951614789,41.29178534272202],[-82.21759887760814,41.291790649904605],[-82.21760161569846,41.29179652175823],[-82.21760329255434,41.2918027798696],[-82.21760385722538,41.29180923408916],[-82.21760329255434,41.291815688308716],[-82.21760161569846,41.291821946420086],[-82.21759887760814,41.29182781827371],[-82.2175951614789,41.29183312545629],[-82.21759058022342,41.29183770671177],[-82.21758527304084,41.29184142284102],[-82.21757940118721,41.29184416093133],[-82.21757314307584,41.29184583778722],[-82.21756668885628,41.29184640245826]]]},"properties":{"Id":0,"Name":"Historic Elm","YearBuilt":1833,"Year":1834,"IdNo":1}},
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-82.21783318848895,41.291438038172316],[-82.2176904208286,41.291428520328225],[-82.2176973907541,41.29132397144434],[-82.21784015841445,41.29133348928826],[-82.21783318848895,41.291438038172316]]]},"properties":{"Id":0,"Name":"Oberlin Hall","YearBuilt":1833,"Year":1834,"IdNo":2, "Archive": "http://www.oberlinlibstaff.com/omeka_oca/items/show/48"}},
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-82.21756668885628,41.29184640245826],[-82.21756023463672,41.29184583778722],[-82.21755397652535,41.29184416093133],[-82.21754810467174,41.29184142284102],[-82.21754279748914,41.29183770671177],[-82.21753821623366,41.29183312545629],[-82.21753450010442,41.29182781827371],[-82.2175317620141,41.291821946420086],[-82.21753008515822,41.291815688308716],[-82.21752952048718,41.29180923408916],[-82.21753008515822,41.2918027798696],[-82.2175317620141,41.29179652175823],[-82.21753450010442,41.291790649904605],[-82.21753821623366,41.29178534272202],[-82.21754279748914,41.29178076146655],[-82.21754810467172,41.2917770453373],[-82.21755397652535,41.29177430724698],[-82.21756023463672,41.291772630391094],[-82.21756668885628,41.29177206572005],[-82.21757314307584,41.291772630391094],[-82.21757940118721,41.29177430724698],[-82.21758527304083,41.2917770453373],[-82.21759058022342,41.29178076146655],[-82.2175951614789,41.29178534272202],[-82.21759887760814,41.291790649904605],[-82.21760161569846,41.29179652175823],[-82.21760329255434,41.2918027798696],[-82.21760385722538,41.29180923408916],[-82.21760329255434,41.291815688308716],[-82.21760161569846,41.291821946420086],[-82.21759887760814,41.29182781827371],[-82.2175951614789,41.29183312545629],[-82.21759058022342,41.29183770671177],[-82.21758527304084,41.29184142284102],[-82.21757940118721,41.29184416093133],[-82.21757314307584,41.29184583778722],[-82.21756668885628,41.29184640245826]]]},"properties":{"Id":0,"Name":"Historic Elm","YearBuilt":1833,"Year":1834,"IdNo":1, "Archive": "http://www.oberlinlibstaff.com/omeka_oca/items/show/179"}},
 {"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-82.21818687912616,41.29142515913884],[-82.21790134380547,41.29144657428776],[-82.21790848218848,41.29132522177645],[-82.21818687912616,41.29133236015946],[-82.21818687912616,41.29142515913884]]]},"properties":{"Id":0,"Name":"Building 2","YearBuilt":1834,"Year":1834,"IdNo":3}},
 {"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-82.21874367300154,41.29141802075577],[-82.21840103061658,41.29140374398969],[-82.21840464310856,41.291317044183415],[-82.21874728549346,41.291331320949496],[-82.21874367300154,41.29141802075577]]]},"properties":{"Id":0,"Name":"Building 3","YearBuilt":1834,"Year":1834,"IdNo":4}},
 {"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-82.21983584560314,41.29109679351984],[-82.21971449309189,41.29111820866899],[-82.21966519513126,41.29083885355908],[-82.21978654764257,41.29081743840999],[-82.21983584560314,41.29109679351984]]]},"properties":{"Id":0,"Name":"Building 4","YearBuilt":1834,"Year":1834,"IdNo":5}},
 {"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-82.21796558925257,41.29101113292376],[-82.21773716099597,41.29100399454069],[-82.21774095652654,41.29088253756538],[-82.21796938478309,41.29088967594822],[-82.21796558925257,41.29101113292376]]]},"properties":{"Id":0,"Name":"Building 5","YearBuilt":1834,"Year":1834,"IdNo":6}},
-{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-82.21756668885628,41.29184640245826],[-82.21756023463672,41.29184583778722],[-82.21755397652535,41.29184416093133],[-82.21754810467174,41.29184142284102],[-82.21754279748914,41.29183770671177],[-82.21753821623366,41.29183312545629],[-82.21753450010442,41.29182781827371],[-82.2175317620141,41.291821946420086],[-82.21753008515822,41.291815688308716],[-82.21752952048718,41.29180923408916],[-82.21753008515822,41.2918027798696],[-82.2175317620141,41.29179652175823],[-82.21753450010442,41.291790649904605],[-82.21753821623366,41.29178534272202],[-82.21754279748914,41.29178076146655],[-82.21754810467172,41.2917770453373],[-82.21755397652535,41.29177430724698],[-82.21756023463672,41.291772630391094],[-82.21756668885628,41.29177206572005],[-82.21757314307584,41.291772630391094],[-82.21757940118721,41.29177430724698],[-82.21758527304083,41.2917770453373],[-82.21759058022342,41.29178076146655],[-82.2175951614789,41.29178534272202],[-82.21759887760814,41.291790649904605],[-82.21760161569846,41.29179652175823],[-82.21760329255434,41.2918027798696],[-82.21760385722538,41.29180923408916],[-82.21760329255434,41.291815688308716],[-82.21760161569846,41.291821946420086],[-82.21759887760814,41.29182781827371],[-82.2175951614789,41.29183312545629],[-82.21759058022342,41.29183770671177],[-82.21758527304084,41.29184142284102],[-82.21757940118721,41.29184416093133],[-82.21757314307584,41.29184583778722],[-82.21756668885628,41.29184640245826]]]},"properties":{"Id":0,"Name":"Historic Elm","YearBuilt":1833,"Year":1833,"IdNo":1}}
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-82.21756668885628,41.29184640245826],[-82.21756023463672,41.29184583778722],[-82.21755397652535,41.29184416093133],[-82.21754810467174,41.29184142284102],[-82.21754279748914,41.29183770671177],[-82.21753821623366,41.29183312545629],[-82.21753450010442,41.29182781827371],[-82.2175317620141,41.291821946420086],[-82.21753008515822,41.291815688308716],[-82.21752952048718,41.29180923408916],[-82.21753008515822,41.2918027798696],[-82.2175317620141,41.29179652175823],[-82.21753450010442,41.291790649904605],[-82.21753821623366,41.29178534272202],[-82.21754279748914,41.29178076146655],[-82.21754810467172,41.2917770453373],[-82.21755397652535,41.29177430724698],[-82.21756023463672,41.291772630391094],[-82.21756668885628,41.29177206572005],[-82.21757314307584,41.291772630391094],[-82.21757940118721,41.29177430724698],[-82.21758527304083,41.2917770453373],[-82.21759058022342,41.29178076146655],[-82.2175951614789,41.29178534272202],[-82.21759887760814,41.291790649904605],[-82.21760161569846,41.29179652175823],[-82.21760329255434,41.2918027798696],[-82.21760385722538,41.29180923408916],[-82.21760329255434,41.291815688308716],[-82.21760161569846,41.291821946420086],[-82.21759887760814,41.29182781827371],[-82.2175951614789,41.29183312545629],[-82.21759058022342,41.29183770671177],[-82.21758527304084,41.29184142284102],[-82.21757940118721,41.29184416093133],[-82.21757314307584,41.29184583778722],[-82.21756668885628,41.29184640245826]]]},"properties":{"Id":0,"Name":"Historic Elm","YearBuilt":1833,"Year":1833,"IdNo":1, "Archive": "http://www.oberlinlibstaff.com/omeka_oca/items/show/179"}}
 ]
 
 
@@ -134,6 +134,7 @@ var gridLayer = L.geoJSON(gridPoly, {
             fillOpacity: 0, 
             weight: 3,
             } 
+    
     }
 });
 
@@ -153,7 +154,8 @@ var buildingLayer = L.geoJSON(false, {
                     BUILT: feature.properties.YearBuilt,
                     EXISTED: feature.properties.Year,
                     NUMBER: feature.properties.IdNo,
-                    LOCATION: feature.geometry.coordinates
+                    LOCATION: feature.geometry.coordinates,
+                    ARCHIVE: feature.properties.Archive
                 })
 
         }
@@ -194,6 +196,7 @@ function onEachGrid(feature, layer) {
 
     if (feature.properties && feature.properties.Letter) {
         layer.bindPopup(gridPopup);
+//        layer.bindTooltip(gridPopup).openTooltip(); doesn't work because layer isn't added to map yet
     }
 
 }
@@ -228,7 +231,7 @@ function enablePrint(customBaseLayer){
             defaultSizeTitles: {Current: 'Print Current Map Extent'},
       		filename: 'myMap',
       		exportOnly: false,
-      		hideControlContainer: true
+      		hideControlContainer: false
 		}).addTo(currentMap);
 
 		function manualPrint () {
@@ -289,7 +292,7 @@ function createMap(){
     buildingLayer.addData(Oberlin2); //populates empty layer with geojson data
     layerControl.addOverlay(buildingLayer, "Buildings"); //adds layer control of buidings
     GenerateTable();
-    
+    sortTable();
     // Set global map variable to map object
     currentMap = mapid;
     enablePrint(customBaseLayer);
@@ -304,7 +307,7 @@ function createMap(){
 
 
 
-//function to open wolf form
+//function to open directory area
 $(function(){
     $("#buildingDirec").click(function(){
         $('.collapse').collapse('hide'); //closes the location nav menu when the side opens
@@ -313,7 +316,7 @@ $(function(){
     });
 });
 
-//function to close wolf form
+//function to close directory area
 $(function(){
     $('#buildClose').click(function() {
         $('#buildHolder').hide(500);
@@ -351,12 +354,33 @@ $(function(){
         buildingLayer.clearLayers();
         buildingLayer.addData(Oberlin2);
         GenerateTable();
+        sortTable();
+        findInTable(); //needed to reenable the clicking on building title for zoom
+        
         $("#yearHeader" ).empty();
         $('#yearHeader').append("<h3><b>"+currentYear+"</b></h3>");
         
 
     });
 });
+
+//function to open popup help
+$(function(){
+    $("#helpbtn").click(function(){
+        $('#popup1').css("visibility", "visible"); 
+       $('#popup1').css("opacity", 1); 
+      
+       });
+  
+  $( ".close" ).click(function() {
+    
+       $('#popup1').css("visibility", "hidden"); 
+       $('#popup1').css("opacity", 0);
+    });
+});
+
+
+
 
 function GenerateTable() {
 
@@ -391,11 +415,14 @@ function GenerateTable() {
         row = table.insertRow(-1);
 
             var cell = row.insertCell(-1);
-            cell.innerHTML = buildingsArray[i].NUMBER;
+            cell.innerHTML = buildingsArray[i].BUILT;
             var cell = row.insertCell(-1);
             cell.innerHTML = buildingsArray[i].NAME;
             var cell = row.insertCell(-1);
-            cell.innerHTML = buildingsArray[i].ARCHIVELINK;
+            console.log("whowho_" + cell);
+            console.log(buildingsArray[i].ARCHIVE)
+            var linkPrep = buildingsArray[i].ARCHIVE
+            cell.innerHTML = '<a href="' + linkPrep + '" target="_blank">Archive Link</a>'; 
             var cell = row.insertCell(-1);
             cell.innerHTML = buildingsArray[i].GRIDID;
 
@@ -437,8 +464,18 @@ function findInTable(){
             if (buildingName == clickBuildingName){
                 buildingLayer.eachLayer(function (layer) {
                       if (layer.feature.properties.Name === buildingName) {
+                        
+                        
+                        console.log(currentMap.getBoundsZoom(layer.getBounds()))
+                        //grabs the level of zoom that has that building fill the screen
+                        var buildZoomLevel = currentMap.getBoundsZoom(layer.getBounds());
+                        //subtracts 2 zoom levels so that the zoom to building doesn't zoom in QUITE as far
+                        var buildZoomLevelAdjst = buildZoomLevel - 2.5;
+                        console.log(buildZoomLevelAdjst);
                         // Zoom to that layer.
-                        currentMap.fitBounds(layer.getBounds());
+                        currentMap.fitBounds(layer.getBounds(), 
+                                             {maxZoom: buildZoomLevelAdjst}); //can change to flyToBounds to get smooth ish animation
+                        layer.openPopup();
                       }
                     });
             }
@@ -450,66 +487,82 @@ function findInTable(){
 
 
 //sort table by headers
-function sortTable(n) {
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("myTable");
-  switching = true;
-  // Set the sorting direction to ascending:
-  dir = "asc";
-  /* Make a loop that will continue until
-  no switching has been done: */
-  while (switching) {
-    // Start by saying: no switching is done:
-    switching = false;
-    rows = table.rows;
-    /* Loop through all table rows (except the
-    first, which contains table headers): */
-    for (i = 1; i < (rows.length - 1); i++) {
-      // Start by saying there should be no switching:
-      shouldSwitch = false;
-      /* Get the two elements you want to compare,
-      one from current row and one from the next: */
-      x = rows[i].getElementsByTagName("TD")[n];
-      y = rows[i + 1].getElementsByTagName("TD")[n];
-      /* Check if the two rows should switch place,
-      based on the direction, asc or desc: */
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          // If so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          // If so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      /* If a switch has been marked, make the switch
-      and mark that a switch has been done: */
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      // Each time a switch is done, increase this count by 1:
-      switchcount ++;
-    } else {
-      /* If no switching has been done AND the direction is "asc",
-      set the direction to "desc" and run the while loop again. */
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
+function sortTable() {
+  var getCellValue = function(tr, idx){ return tr.children[idx].innerText || tr.children[idx].textContent; }
+
+    var comparer = function(idx, asc) { return function(a, b) { return function(v1, v2) {
+            return v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2);
+        }(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+    }};
+
+    // do the work...
+    Array.prototype.slice.call(document.querySelectorAll('th')).forEach(function(th) { th.addEventListener('click', function() {
+            var table = th.parentNode
+            while(table.tagName.toUpperCase() != 'TABLE') table = table.parentNode;
+            Array.prototype.slice.call(table.querySelectorAll('tr:nth-child(n+2)'))
+                .sort(comparer(Array.prototype.slice.call(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+                .forEach(function(tr) { table.appendChild(tr) });
+        })
+    });
+//    //original function to sort by headers, this conflicts with the findInTable to zoom to a building, they can't work together for an unknown reason
+//    var tbl, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+//  tbl = document.getElementById("myTable");
+//  switching = true;
+//  // Set the sorting direction to ascending:
+//  dir = "asc";
+//  /* Make a loop that will continue until
+//  no switching has been done: */
+//  while (switching) {
+//    // Start by saying: no switching is done:
+//    switching = false;
+//    rows = tbl.rows;
+//    /* Loop through all table rows (except the
+//    first, which contains table headers): */
+//    for (i = 1; i < (rows.length - 1); i++) {
+//      // Start by saying there should be no switching:
+//      shouldSwitch = false;
+//      /* Get the two elements you want to compare,
+//      one from current row and one from the next: */
+//      x = rows[i].getElementsByTagName("TD")[1];
+//        console.log("whereami" + x);
+//      y = rows[i + 1].getElementsByTagName("TD")[1];
+//      /* Check if the two rows should switch place,
+//      based on the direction, asc or desc: */
+//      if (dir == "asc") {
+//        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+//          // If so, mark as a switch and break the loop:
+//          shouldSwitch = true;
+//          break;
+//        }
+//      } else if (dir == "desc") {
+//        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+//          // If so, mark as a switch and break the loop:
+//          shouldSwitch = true;
+//          break;
+//        }
+//      }
+//    }
+//    if (shouldSwitch) {
+//      /* If a switch has been marked, make the switch
+//      and mark that a switch has been done: */
+//      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+//      switching = true;
+//      // Each time a switch is done, increase this count by 1:
+//      switchcount ++;
+//    } else {
+//      /* If no switching has been done AND the direction is "asc",
+//      set the direction to "desc" and run the while loop again. */
+//      if (switchcount == 0 && dir == "asc") {
+//        dir = "desc";
+//        switching = true;
+//      }
+//    }
+//  }
 }
 
 
 
 
 $(document).ready(createMap);
-
-
 
 

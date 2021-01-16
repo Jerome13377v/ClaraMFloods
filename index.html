@@ -41,12 +41,26 @@
               <ul class="nav navbar-nav navbar-right">
                 <li><button class="btn" id="buildingDirec"><i class="fas fa-building"></i> Building Directory</button></li>
                 <li><button class="btn" id="timebtn"><i class="fas fa-history"></i> Choose Year</button></li>
+                  <li><button class="btn" id="infobtn"><i class="fas fa-info-circle"></i><a href="info.html" target="_blank" class="specialLink"> Info</a></button></li>
+                <li><button class="btn" id="helpbtn"><i class="fas fa-question-circle"></i> Help</button></li>
               </ul>
 
             </div><!--/.navbar-collapse -->
           </div>
         </nav>
         
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Title of Popup</h2>
+                <a class="close" href="#">×</a>
+                <div class="content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quick text here text here text here text here text here text here text here text here text here text here text here <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quick text here text here text here text here text here text here text here text here text here text here text here text here <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quick text here text here text here text here text here text here text here text here text here text here text here text here 
+                </div>
+            </div>
+        </div>
+
         <div class="wrapper">
             <div id="mapholder">
                 
@@ -89,7 +103,7 @@
                               <tr>
                                <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->  
 
-                                    <th onclick="sortTable(0)">Number</th>
+                                    <th onclick="sortTable(0)">Year Built/Acquired</th>
                                     <th onclick="sortTable(1)">Name</th>
                                   
                                     <th>Archive Link</th>
